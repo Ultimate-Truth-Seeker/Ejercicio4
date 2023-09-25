@@ -14,6 +14,10 @@ public class Goalkeeper extends Player {
     public int getReceived() {
         return received;
     }
+    public float Efectivity() {
+        float a = (blocked - received) * 100 / (blocked + received) + goals *100 / kicks;
+        return a;
+    }
     
         
 }
